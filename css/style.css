@@ -27,7 +27,7 @@ p {
 #container-mask {
   height: 650px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   /*min-height: 650px;*/
   position: absolute;
 }
@@ -61,7 +61,7 @@ li  {
 #introduction {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 75%;
   text-align: center;
   padding-top: 14%;
 }
@@ -128,7 +128,7 @@ hr {
   margin-right: auto;
   width: 45%;
   text-align: center;
-  padding-top: 14%;
+  padding-top: 8%;
 }
 
 #my-work-container {
@@ -182,9 +182,13 @@ img:hover {
   margin-right: auto;
   width: 45%;
   text-align: center;
-  padding-top: 14%;
+  padding-top: 20%;
 }
 
 #contact a{
   color: #eee;
+}
+
+.fa {
+  padding: 10px;
 }
