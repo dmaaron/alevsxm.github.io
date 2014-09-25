@@ -21,15 +21,15 @@ p {
   background-size: cover;
   height: 650px;
   width: 100%;
-  /*position: absolute;*/
+  min-height: 650px;
 }
 
 #container-mask {
   height: 650px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  min-height: 100%;
-  /*position: absolute;*/
+  /*min-height: 650px;*/
+  position: absolute;
 }
 
 nav {
@@ -72,7 +72,7 @@ hr {
 
 #arrow-centering{
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 48.5%;
   margin-bottom: 3px;
 }
