@@ -20,12 +20,13 @@ p {
 #header-container {
   background-image: url("../assets/bk_manhattan_bridge.jpg");
   background-size: cover;
-  height: 100%;
+  height: 100vh;
 }
 
 #container-mask {
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
+  height: 100vh;
   min-height: 650px;
 }
 
@@ -113,7 +114,7 @@ hr {
 }
 
 #my-story-container {
-  height: 650px;
+  height: 100%;
   width: 100%;
   background-color: #29293D;
   display: inline-block;
@@ -130,7 +131,7 @@ hr {
 }
 
 #my-work-container {
-  height: 650px;
+  height: 100%;
   width: 100%;
   background-color: #2C2C2F;
   display: inline-block;
@@ -163,14 +164,14 @@ img:hover {
 }
 
 #contact-container {
-  height: 650px;
+  height: 100%;
   width: 100%;
   background-image: url("../assets/biggie.jpg");
   background-size: cover;
 }
 
 #contact-container-mask {
-  height: 650px;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
