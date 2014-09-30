@@ -17,6 +17,10 @@ p {
   line-height: 1.5;
 }
 
+a {
+  cursor: pointer;
+}
+
 #header-container {
   background-image: url("../assets/bk_manhattan_bridge.jpg");
   background-size: cover;
@@ -45,7 +49,6 @@ nav a  {
 
 nav a:hover {
   color: #A7A9AC;
-  cursor: pointer;
 }
 
 span.dot-divider {
@@ -69,7 +72,7 @@ hr {
   width: 100px;
 }
 
-#arrow-centering{
+.arrow-centering{
   position: absolute;
   bottom: 2%;
   left: 48.5%;
@@ -83,9 +86,23 @@ hr {
 	border-top: 20px solid #fff;
 }
 
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+  margin-bottom: 5px;
+}
+
 .arrow-down:hover {
   cursor: pointer;
   border-top: 20px solid lightgray;
+}
+
+.arrow-up:hover {
+  cursor: pointer;
+  border-bottom: 20px solid lightgray;
 }
 
 .animated {
@@ -119,6 +136,7 @@ hr {
   display: inline-block;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 #my-story {
@@ -136,6 +154,7 @@ hr {
   display: inline-block;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 #my-work {
@@ -167,6 +186,7 @@ img:hover {
   width: 100%;
   background-image: url("../assets/biggie.jpg");
   background-size: cover;
+  position:relative;
 }
 
 #contact-container-mask {

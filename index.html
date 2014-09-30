@@ -28,7 +28,7 @@
           <hr>
           <h5>Full Stack Web Developer. Product Manager. Startup Guy.</h5>
         </div>
-        <div id="arrow-centering">
+        <div class="arrow-centering">
             <a class="my-story"><div class="arrow-down animated bounce"></div></a>
         </div>
       </div>
@@ -61,6 +61,10 @@
         haven't, we still probably will).
       </p>
     </div>
+      <div class="arrow-centering">
+        <a><div class="arrow-up"></div></a>
+        <a><div class="arrow-down"></div></a>
+      </div>
   </div>
   <div id="my-work-container">
     <div id="my-work">
@@ -95,6 +99,10 @@
         </div>
       </div>
     </div>
+      <div class="arrow-centering">
+        <a><div class="arrow-up"></div></a>
+        <a><div class="arrow-down"></div></a>
+      </div>
   </div>
   <div id="contact-container">
     <div id="contact-container-mask">
@@ -110,6 +118,9 @@
         <a href="mailto:alexmlevine@gmail.com"><i class="fa fa-envelope-square fa-3x"></i></a>
       </div>
     </div>
+        <div class="arrow-centering">
+          <a><div class="arrow-up"></div></a>
+      </div>
   </div>
   <script>
     function animate_scroll(e) {
@@ -121,7 +132,7 @@
     }
     $(function(){
     $('#banner-links a').on('click', animate_scroll);
-    $('#arrow-centering a').on('click', animate_scroll);
+    $('.arrow-centering a').on('click', animate_scroll);
     });
   </script>
 
