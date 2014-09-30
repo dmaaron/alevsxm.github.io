@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
@@ -17,11 +16,11 @@
     <div id="header-container">
       <div id="container-mask">
         <nav>
-          <ul>
-            <li><a href="#">HOME</a><span class="dot-divider">·</span></li>
-            <li><a href="#my-story">MY STORY</a><span class="dot-divider">·</span></li>
-            <li><a href="#my-work">WORK</a><span class="dot-divider">·</span></li>
-            <li><a href="#contact">CONTACT</a></li>
+          <ul id="banner-links">
+            <li><a href="#" >HOME</a><span class="dot-divider">·</span></li>
+            <li><a class="my-story">MY STORY</a><span class="dot-divider">·</span></li>
+            <li><a class="my-work">WORK</a><span class="dot-divider">·</span></li>
+            <li><a class="contact">CONTACT</a></li>
           </ul>
         </nav>
         <div id="introduction">
@@ -112,5 +111,16 @@
       </div>
     </div>
   </div>
+  <script>
+    $(function(){
+    $('#banner-links a').click(function(){
+        var link_class = $(this).attr('class');
+        console.log(link_class);
+        var div_pos = $('#'+link_class+'').offset().top;
+        $('body, html').animate({scrollTop: div_pos}, 500);
+        return false;
+    });
+});
+  </script>
 
 </body>
