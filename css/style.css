@@ -71,9 +71,8 @@ hr {
 
 #arrow-centering{
   position: absolute;
-  bottom: 0%;
+  bottom: 2%;
   left: 48.5%;
-  margin-bottom: 3px;
 }
 
 .arrow-down {
