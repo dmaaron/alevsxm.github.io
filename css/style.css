@@ -2,6 +2,7 @@ html, body {
   font-family: 'Montserrat', Helvetica Neue, Helvetica, sans-serif;
   color: #FFFFFF;
   height: 100%;
+  position: relative;
 }
 
 h3 {
@@ -61,11 +62,14 @@ li  {
 }
 
 #introduction {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 75%;
   text-align: center;
-  padding-top: 14%;
+  padding-top: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 hr {
@@ -164,11 +168,14 @@ hr {
 }
 
 #my-story {
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
+  margin: auto;
+  width: 50%;
   text-align: center;
   padding-top: 8%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #my-work-container {
