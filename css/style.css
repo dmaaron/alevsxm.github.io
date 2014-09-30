@@ -47,6 +47,7 @@ nav a  {
 
 nav a:hover {
   color: #A7A9AC;
+  cursor: pointer;
 }
 
 span.dot-divider {
