@@ -1,6 +1,7 @@
-body {
+html, body {
   font-family: 'Montserrat', Helvetica Neue, Helvetica, sans-serif;
   color: #FFFFFF;
+  height: 100%;
 }
 
 h3 {
@@ -19,17 +20,12 @@ p {
 #header-container {
   background-image: url("../assets/bk_manhattan_bridge.jpg");
   background-size: cover;
-  height: 650px;
-  width: 100%;
-  min-height: 650px;
+  height: 100%;
 }
 
 #container-mask {
-  height: 650px;
-  width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  /*min-height: 650px;*/
-  position: absolute;
+  position: relative;
 }
 
 nav {
