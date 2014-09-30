@@ -29,7 +29,7 @@
           <h5>Full Stack Web Developer. Product Manager. Startup Guy.</h5>
         </div>
         <div id="arrow-centering">
-          <a href="#my-story"><div class="arrow-down animated bounce"></div></a>
+          <a class="my-story"><div class="arrow-down animated bounce"></div></a>
         </div>
       </div>
     </div>
@@ -112,15 +112,17 @@
     </div>
   </div>
   <script>
-    $(function(){
-    $('#banner-links a').click(function(){
+    function animate_scroll(e) {
+      e.preventDefault();
         var link_class = $(this).attr('class');
-        console.log(link_class);
         var div_pos = $('#'+link_class+'').offset().top;
         $('body, html').animate({scrollTop: div_pos}, 500);
         return false;
+    }
+    $(function(){
+    $('#banner-links a').on('click', animate_scroll);
+    $('#arrow-centering a').on('click', animate_scroll);
     });
-});
   </script>
 
 </body>
